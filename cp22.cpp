@@ -1,9 +1,5 @@
-//reverse the string using the stack in c++
-#include<iostream>
+//reverse a string using stack in c++
 #include<bits/stdc++.h>
-#include<stack>
-#include<algorithm>
-#include<string>
 using namespace std;
 
 void showstack(stack <char> t)
@@ -11,19 +7,9 @@ void showstack(stack <char> t)
     cout<<"reverse is : ";
     while(!t.empty())
     {
-        cout<<t.top();
+        cout<<t.top();  //printing the top element of stack
         t.pop();
-
     }
-    while(!t.empty())
-    {
-        cout<<t.top();
-        t.pop();
-
-    }
- 
-    
-
     cout<<endl;
 }
 
@@ -31,16 +17,12 @@ int main()
 {
     stack <char> x;
     string str;
-    getline(cin,str);
-    for(int i=0;i<str.length();i++)
+    getline(cin,str); //getting string from user
+    for(int i=0;i<str.length();i++)   //entering string in stack
     {
         x.push(str[i]);
-
     } 
-    showstack(x);
-    
-    
-
+    showstack(x); //print stack function
     return 0;   
 }
 
