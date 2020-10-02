@@ -1,2 +1,2 @@
 # cpp_programs
-simple /good cpp programs
+Basic cpp & Data structures based programs.
